@@ -1,7 +1,7 @@
 import { app } from 'electron';
 import fs from 'fs';
 import path from 'path';
-import {init} from 'electron-compile';
+import {init} from '@lanethegreat/electron-compile';
 
 function findPackageJson(initScript) {
   if (initScript === '/' || initScript.match(/^[A-Za-z]:$/)) {
