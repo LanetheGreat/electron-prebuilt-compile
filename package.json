@@ -8,7 +8,7 @@
   "main": "lib/main.js",
   "scripts": {
     "compile": "babel -d lib/ src/",
-    "prepublish": "npm run compile && ncp ./node_modules/electron/electron.d.ts ."
+    "prepare": "npm run compile && ncp ./node_modules/electron/electron.d.ts ."
   },
   "repository": {
     "type": "git",
