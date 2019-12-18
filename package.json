@@ -1,6 +1,6 @@
 {
   "name": "@lanethegreat/electron-prebuilt-compile",
-  "version": "4.0.0-beta.10u1",
+  "version": "4.0.0-beta.11",
   "description": "electron-prebuilt that automatically understands Babel + React + LESS",
   "bin": {
     "electron": "lib/cli.js"
@@ -38,7 +38,7 @@
     "@lanethegreat/electron-compile": "*",
     "@lanethegreat/electron-compilers": "*",
     "babel-plugin-array-includes": "^2.0.3",
-    "electron": "4.0.0-beta.10",
+    "electron": "4.0.0-beta.11",
     "yargs": "^15.0.0"
   },
   "devDependencies": {
