@@ -28,3 +28,7 @@ node_modules
 
 lib
 test-dist
+
+# Eclipse related files
+/.project
+/.settings

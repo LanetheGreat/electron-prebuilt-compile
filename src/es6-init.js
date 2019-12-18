@@ -11,7 +11,7 @@ function findPackageJson(initScript) {
   // Walk up the parent directories until we find package.json. Make sure that
   // we're not actually stumbling upon a parent npm package
   let ret = path.join(initScript, 'package.json')
-  if (fs.statSyncNoException(ret) && !path.resolve(path.dirname(ret), '..').match(/[\\\/]node_modules$/i)) {
+  if (fs.statSyncNoException(ret) && !path.resolve(path.dirname(ret), '..').match(/[\\/]node_modules$/i)) {
     return ret;
   }
 
@@ -34,7 +34,7 @@ function main() {
   const appPath = path.dirname(packageJson);
   const packageJsonData = JSON.parse(fs.readFileSync(packageJson, 'utf8'));
 
-  app.setName(packageJsonData.productName || packageJsonData.name);
+  app.name = packageJsonData.productName || packageJsonData.name;
   app.setVersion(packageJsonData.version);
   app.setAppPath(appPath);
 
